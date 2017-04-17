@@ -4,7 +4,7 @@ function Telefon(marka, cena, kolor,pamięć_Ram) {
 	this.kolor = kolor;
 	this.pamięć_Ram = pamięć_Ram;
 	this.getWarranyCost = function(){
-		console.log("ceny przedłużonej gwarancji równa 10% ceny telefonu wynosi: " + (this.cena * 0.90 ))
+		console.log("cena przedłużonej gwarancji równa 10% ceny telefonu wynosi: " + (this.cena * 0.90 ))
 	}
 }
 
