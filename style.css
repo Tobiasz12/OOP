@@ -1,0 +1,37 @@
+.kanban {
+    background: #cbc7d8;
+    padding: 25px;
+}
+
+.column-container {
+	display: flex;
+	justify-content: center;
+}
+
+.create-column {
+	margin: auto;
+	margin-bottom: 15px;
+
+}
+
+#board {
+	text-align: center;
+}
+
+div .column {
+	width: 250px;
+	height: 500px;
+	background: #dddddd;
+	border:1px solid;
+}
+
+.column-card-list {
+	height: 350px;
+	cursor:pointer;
+}
+.card {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+	align-items: center;
+}

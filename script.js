@@ -27,7 +27,22 @@ $(function() {
 				});
 				
 				columnAddCard.click(function() {
-				    self.addCard(new Card(prompt("Wpisz nazwę karty")));
+				    var cancel = prompt("Wpisz nazwę karty");
+
+				    if (cancel === null) {
+				        return; 
+				    }
+				    switch (cancel) {
+				   		case 'fun':
+				        	Fun();
+				        	break;
+				    	case 'boring':
+				        	Boring();
+				        	break;
+				    }
+
+			    	self.addCard(new Card(cancel));
+							
 				});
 			
 				column.append(columnTitle)
@@ -98,9 +113,23 @@ $(function() {
 		 $('.create-column')
 		  .click(function(){
 			var name = prompt('Wpisz nazwę kolumny');
+			
+			if (name == null) {
+			    return;
+			}
+		    switch (name) {
+		    	case 'fun':
+		        	Fun();
+		        	break;
+		    	case 'boring':
+		        	Boring();
+		        	break;
+		    }
+
 			var column = new Column(name);
 		    	board.addColumn(column);
 		  }); 
+
 
 		 // TWORZENIE KOLUMN
 		var todoColumn = new Column('Do zrobienia');
