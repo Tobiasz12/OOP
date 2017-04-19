@@ -32,14 +32,6 @@ $(function() {
 				    if (cancel === null) {
 				        return; 
 				    }
-				    switch (cancel) {
-				   		case 'fun':
-				        	Fun();
-				        	break;
-				    	case 'boring':
-				        	Boring();
-				        	break;
-				    }
 
 			    	self.addCard(new Card(cancel));
 							
