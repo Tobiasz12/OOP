@@ -1,9 +1,8 @@
-function Telefon(marka, cena, kolor,pamięć_Ram,getWarranyCost) {
+function Telefon(marka, cena, kolor,pamięć_Ram) {
 	this.marka = marka; 
 	this.cena = cena;
 	this.kolor = kolor;
 	this.pamięć_Ram = pamięć_Ram;
-	this.getWarranyCost = getWarranyCost;
 }
 
 Telefon.prototype.printInfo = function() {
@@ -11,6 +10,7 @@ Telefon.prototype.printInfo = function() {
 		var price = this.cena * 0.90 
 		return price
 	}
+	
 	console.log("Marka telefonu to " + this.marka + ", kolor to " + this.kolor + ", a cena to " + this.cena +", do tego pamięć: " + this.pamięć_Ram + "." + "cena przedłużonej gwarancji równa 10% ceny telefonu wynosi: " + this.getWarranyCost());	
 
 }
